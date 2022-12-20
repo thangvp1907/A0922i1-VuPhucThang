@@ -8,14 +8,18 @@ public class Xaydunglopfan {
     private boolean on;
     private double radius;
     private String color;
-    // Lớp giá trị mặc định
+
+
+    // hàm tham số mặc định
     public Xaydunglopfan(){
         this.speed = Slow;
         this.on = false;
         this.radius = 5;
         this.color = "blue";
     }
-    //Lớp lấy giá trị
+
+
+    //hàm lấy tham số
     public Xaydunglopfan(int speed, boolean on, double radius, String color) {
         this.speed = speed;
         this.on = on;
@@ -64,7 +68,7 @@ public class Xaydunglopfan {
         this.color=color;
     }
 
-    //Hàm so sánh on == true hay false bằng toán tử ba ngôi
+    //Hàm so sánh on == true hoặc false bằng toán tử ba ngôi để thực thi
     @Override
     public String toString() {
        return this.on ?
