@@ -20,7 +20,7 @@ public class cylinder extends circle{
         super(radius, color);
         this.height=height;
     }
-    public double getareaHinhTru(){
+    public double getAreaHinhTru(){
         return super.getArea() * height;
     }
 
@@ -29,13 +29,13 @@ public class cylinder extends circle{
         return super.toString() + " Height: "+getHeight();
     }
 }
-class test2 {
-    public static void main(String[] args) {
-        cylinder hinhtru = new cylinder(3,"red",3);
-        circle hinhtron =new circle(2,"yellow");
-        System.out.println("Thuộc tính hình trụ= "+hinhtru);
-        System.out.println("Thuộc tính hình tròn= "+hinhtron);
-        System.out.println("Diện tích hình trụ= "+hinhtru.getareaHinhTru());
-        System.out.println("Diện tích hình tròn=  "+hinhtron.getArea());
-    }
-}
+//class test2 {
+//    public static void main(String[] args) {
+//        cylinder hinhtru = new cylinder(5,"red",3);
+//        circle hinhtron =new circle(2,"yellow");
+//        System.out.println("Thuộc tính hình trụ= "+hinhtru);
+//        System.out.println("Thuộc tính hình tròn= "+hinhtron);
+//        System.out.println("Diện tích hình trụ= "+hinhtru.getareaHinhTru());
+//        System.out.println("Diện tích hình tròn=  "+hinhtron.getArea());
+//    }
+//}
