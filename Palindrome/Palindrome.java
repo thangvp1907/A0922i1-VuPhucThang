@@ -27,10 +27,21 @@ public class Palindrome {
 
         //Hàm kiểm tra palindorme
         //lấy các phần tử của stack và queue so sánh với nhau thông qua equals của java(học được trên mạng,tự tìm hiểu nhá)
-        if(queue.remove().equals(Stack.pop())){
+        //tạo một biến palindrome ==true để xét
+        boolean isPalindrome = true;
+        //xét từng phaafn tử của queue và stack
+        while (!queue.isEmpty()) {
+            if (queue.remove().equals(Stack.pop())){
+                continue;
+            } else {
+                isPalindrome=false;
+                break;
+            }
+        }
+        if (!isPalindrome) {
+            System.out.println("Không phải Palindrome");
+        } else {
             System.out.println("Palindrome");
-        }else {
-            System.out.println("Không phải palindrome");
         }
     }
 }
