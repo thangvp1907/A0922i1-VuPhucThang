@@ -31,6 +31,8 @@ public class Palindrome {
         boolean isPalindrome = true;
         //xét từng phaafn tử của queue và stack
         while (!queue.isEmpty()) {
+            //nó sẽ xét đến khi nào ko có hoặc 2 phần tử khác nhau
+            // Nếu true tiếp tục xét
             if (queue.remove().equals(Stack.pop())){
                 continue;
             } else {
@@ -38,6 +40,7 @@ public class Palindrome {
                 break;
             }
         }
+        //xét nếu false
         if (!isPalindrome) {
             System.out.println("Không phải Palindrome");
         } else {
