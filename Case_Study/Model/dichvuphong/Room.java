@@ -1,4 +1,4 @@
-package Case_Study.Model;
+package Case_Study.Model.dichvuphong;
 
 public class Room extends Facility {
     private String Freeserviceincluded;

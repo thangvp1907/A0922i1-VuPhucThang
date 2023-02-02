@@ -16,17 +16,7 @@ public class Booking_Managerment {
             choice = prompt.nextInt();
             switch (choice) {
                 case 1:
-                    Emloyee_Management.displayMainMenu();
                     break;
-                case 2:
-                    Customer_Management.displayMainMenu();
-                    break;
-                case 3:
-                    Facility_Management.displayMainMenu();
-                    break;
-                case 4:
-
-
             }
         } while (choice != 6);
     }

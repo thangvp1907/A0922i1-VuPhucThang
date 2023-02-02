@@ -1,8 +1,8 @@
-package Case_Study.Model;
+package Case_Study.Model.dichvuphong;
 
 public class House extends Facility{
-    private String roomstandard;// tiêu chuẩn phòng
-    private int numberoffloors; //Số tầng
+    protected String roomstandard;// tiêu chuẩn phòng
+    protected int numberoffloors; //Số tầng
     //hàm không có tham số
     public House() {
 

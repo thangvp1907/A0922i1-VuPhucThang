@@ -1,4 +1,4 @@
-package Case_Study.Model;
+package Case_Study.Model.dichvuphong;
 
 public class Villa extends Facility {
     private String roomstandard;// tiêu chuẩn phòng

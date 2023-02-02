@@ -1,6 +1,4 @@
-package Case_Study.Model;
-
-import Case_Study.Controllers.Facility_Management;
+package Case_Study.Model.dichvuphong;
 
 public abstract class Facility {
     private String service;// Dịch vụ
