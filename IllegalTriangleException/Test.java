@@ -1,4 +1,4 @@
-package Exception;
+package IllegalTriangleException;
 
 import Case_Study.services.Service;
 import IllegalTriangleException.IllegalTriangleException;
