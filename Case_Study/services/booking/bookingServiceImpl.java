@@ -1,6 +1,8 @@
-package Case_Study.services;
+package Case_Study.services.booking;
 
-public class bookingServiceImpl implements bookingservice{
+import Case_Study.services.booking.bookingservice;
+
+public class bookingServiceImpl implements bookingservice {
     @Override
     public void disPlay() {
 

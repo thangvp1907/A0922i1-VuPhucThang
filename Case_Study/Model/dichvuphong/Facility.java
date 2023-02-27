@@ -2,9 +2,9 @@ package Case_Study.Model.dichvuphong;
 
 public abstract class Facility {
     private String service;// Dịch vụ
-    private double usablearea; //Diện tích sử dụng
-    private double rentalcosts; //Chi phí thuê
-    private int maxpeople;//Người tối đa
+    private String usablearea; //Diện tích sử dụng
+    private String rentalcosts; //Chi phí thuê
+    private String maxpeople;//Người tối đa
     private String leaseterm;//Thời hạn thuê
 
     //hàm ko có tham số
@@ -12,7 +12,7 @@ public abstract class Facility {
 
     }
     //hàm có tham số
-    public Facility(String service, double usablearea, double rentalcosts, int maxpeople, String leaseterm) {
+    public Facility(String service, String usablearea, String rentalcosts, String maxpeople, String leaseterm) {
         this.service = service;
         this.usablearea = usablearea;
         this.rentalcosts = rentalcosts;
@@ -22,38 +22,58 @@ public abstract class Facility {
 
     //get và set của từng thuộc tính
     //service
+
+
     public String getService() {
         return service;
     }
+
     public void setService(String service) {
         this.service = service;
     }
-    //usablearea
-    public double getUsablearea() {
+
+    public String getUsablearea() {
         return usablearea;
     }
-    public void setUsablearea(double usablearea) {
+
+    public void setUsablearea(String usablearea) {
         this.usablearea = usablearea;
     }
-    //rentalcosts
-    public double getRentalcosts() {
+
+    public String getRentalcosts() {
         return rentalcosts;
     }
-    public void setRentalcosts(double rentalcosts) {
+
+    public void setRentalcosts(String rentalcosts) {
         this.rentalcosts = rentalcosts;
     }
-    //Maxpeople
-    public int getMaxpeople() {
+
+    public String getMaxpeople() {
         return maxpeople;
     }
-    public void setMaxpeople(int maxpeople) {
+
+    public void setMaxpeople(String maxpeople) {
         this.maxpeople = maxpeople;
     }
-    //Leaseterm
+
     public String getLeaseterm() {
         return leaseterm;
     }
+
     public void setLeaseterm(String leaseterm) {
         this.leaseterm = leaseterm;
     }
+    public abstract String getinfor();
+
+    @Override
+    public String toString() {
+        return "Facility{" +
+                "service='" + service + '\'' +
+                ", usablearea='" + usablearea + '\'' +
+                ", rentalcosts='" + rentalcosts + '\'' +
+                ", maxpeople='" + maxpeople + '\'' +
+                ", leaseterm='" + leaseterm + '\'' +
+                '}';
+    }
+
 }

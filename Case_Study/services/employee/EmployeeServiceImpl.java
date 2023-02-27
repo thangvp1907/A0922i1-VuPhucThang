@@ -1,8 +1,7 @@
-package Case_Study.services;
+package Case_Study.services.employee;
 
 import Case_Study.Model.Customers.Employee;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 

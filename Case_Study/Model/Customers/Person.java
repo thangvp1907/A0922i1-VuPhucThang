@@ -84,4 +84,6 @@ public abstract class Person {
                 ", email='" + email + '\'' +
                 '}';
     }
+    //Nhập phần tử vào custom
+
 }

@@ -1,7 +1,6 @@
 package Case_Study.Controllers;
 
-import Case_Study.Model.Customers.Employee;
-import Case_Study.services.EmployeeServiceImpl;
+import Case_Study.services.employee.EmployeeServiceImpl;
 
 import java.util.Scanner;
 
@@ -11,8 +10,8 @@ public class Emloyee_Management {
         int choice;
         Scanner prompt = new Scanner(System.in);
         do {
-            System.out.println("1. Display list employee");
-            System.out.println("2. Add new employee");
+            System.out.println("1. Display list Case_Study.services.employee");
+            System.out.println("2. Add new Case_Study.services.employee");
             System.out.println("3. Edit emloyee");
             System.out.println("4. Return main menu");
             choice = prompt.nextInt();

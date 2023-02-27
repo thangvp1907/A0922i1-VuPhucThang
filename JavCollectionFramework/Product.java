@@ -24,7 +24,7 @@ public class Product {
     }
 
     public void setNameProduct(String nameProduct) {
-        this.nameProduct = this.nameProduct;
+        this.nameProduct = nameProduct;
     }
 
     public int getGia() {
@@ -48,16 +48,16 @@ public class Product {
         Scanner prompt =new Scanner(System.in);
         System.out.println("Nhập ID sản phẩm");
         double ID= prompt.nextDouble();
-        prompt.nextInt();
         this.setID(ID);
 
         System.out.println("Nhập tên sản phẩm");
+        prompt.nextInt();
         String nameProduct= prompt.nextLine();
         this.setNameProduct(nameProduct);
 
+
         System.out.println("Nhập Giá Sản Phẩm");
         int priceProduct= prompt.nextInt();
-        prompt.nextInt();
         this.setGia(priceProduct);
 
     }
@@ -68,5 +68,4 @@ public class Product {
                 +"\n"+"Tên: "+this.getNameProduct()
                 +"\n"+"Giá: "+this.getGia());
     }
-    
 }

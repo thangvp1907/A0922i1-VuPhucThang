@@ -7,8 +7,8 @@ public class Booking_Managerment {
         int choice;
         Scanner prompt = new Scanner(System.in);
         do {
-            System.out.println("1. Add new booking");
-            System.out.println("2. Display list booking");
+            System.out.println("1. Add new Case_Study.services.booking");
+            System.out.println("2. Display list Case_Study.services.booking");
             System.out.println("3. Create new constracts");
             System.out.println("4. Display list contracts");
             System.out.println("5. Edit contracts");

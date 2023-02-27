@@ -1,8 +1,15 @@
 package Case_Study.Controllers;
 
+import Case_Study.services.facilityservice.IFacilityService;
+import Case_Study.services.facilityservice.MenuAddFacility;
+import Case_Study.services.facilityservice.facilityServiceImpl;
+
+
 import java.util.Scanner;
 
-public class Facility_Management {
+public class Facility_Management  {
+    static facilityServiceImpl facilityService = new facilityServiceImpl();
+
     public static void displayMainMenu() {
         int choice;
         Scanner prompt = new Scanner(System.in);
@@ -13,8 +20,14 @@ public class Facility_Management {
             System.out.println("4. Return main menu");
             choice = prompt.nextInt();
             switch (choice) {
-                case 1:
+                case 1: {
+                    facilityService.displayService();
                     break;
+                }
+                case 2:{
+                    MenuAddFacility.menuAdd();
+                    break;
+                }
             }
         } while (choice != 4);
     }
